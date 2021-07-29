@@ -111,7 +111,7 @@ if active_tab == "LAGA Bauschutt":
     if depVcheck:
         st.markdown(
             "**Achtung**. Aktuell ist diese Funktion nicht implementiert!")
-    df = pd.read_excel("C:/QLaga0.913 AlphaRelease/user.xlsx",
+    df = pd.read_excel("C:/QLAGA0.913/user.xlsx",
                        sheet_name='Tabelle1', header=None)  # C:\Users\Frank\Desktop\Programmierung\Aktuelle Projekte\St0706\Streamlit #C:/Users/0z/Desktop/Programmierung/Aktuelle Projekte/St0706/Streamlit/user.xlsx
     user1 = (df.iat[0, 3])
     user2 = (df.iat[1, 3])
@@ -4481,7 +4481,7 @@ if active_tab == "LAGA Bauschutt":
             if single_file:
 
                 path = Path(
-                    "C:/QLaga0.913 AlphaRelease/est2.xlsx")
+                    "C:/QLAGA0.913/est2.xlsx")
 
             if '/' in Probenbezeichnung_A:
                 Probenbezeichnung = Probenbezeichnung_A.replace(
@@ -4492,10 +4492,10 @@ if active_tab == "LAGA Bauschutt":
             else:
                 Probenbezeichnung = Probenbezeichnung_A
             # C:/Users/0z/Desktop/Programmierung/Aktuelle Projekte/St0706/Streamlit
-            path_est2 = r"C:/QLaga0.913 AlphaRelease/est2.xlsx"
-            newpath1 = 'C:/QLaga0.913 AlphaRelease/'
+            path_est2 = r"C:/QLAGA0.913/est2.xlsx"
+            newpath1 = 'C:/QLAGA0.913/'
             newpath2 = newpath1
-            path_est3 = r"C:/QLaga0.913 AlphaRelease/est3.xlsx"
+            path_est3 = r"C:/QLAGA0.913/est3.xlsx"
             # newpath2=
             # C:/Users/0z/Desktop/Programmierung/Aktuelle Projekte/St0706/Streamlit/
             print(os.path.getmtime(path_est2))
