@@ -112,118 +112,118 @@ if active_tab == "LAGA Bauschutt":
     if depVcheck:
         st.markdown(
             "**Achtung**. Aktuell ist diese Funktion nicht implementiert!")
-    df = pd.read_excel("C:/QLAGA0.913/user.xlsx",
-                       sheet_name='Tabelle1', header=None)  # C:\Users\Frank\Desktop\Programmierung\Aktuelle Projekte\St0706\Streamlit #C:/Users/0z/Desktop/Programmierung/Aktuelle Projekte/St0706/Streamlit/user.xlsx
-    user1 = (df.iat[0, 3])
-    user2 = (df.iat[1, 3])
-    user3 = (df.iat[2, 3])
-    user4 = (df.iat[3, 3])
-    user5 = (df.iat[4, 3])
-    user6 = (df.iat[5, 3])
-    user7 = (df.iat[6, 3])
-    user8 = (df.iat[7, 3])
-    user9 = (df.iat[8, 3])
-    user10 = (df.iat[9, 3])
-    user11 = (df.iat[10, 3])
-    user12 = (df.iat[11, 3])
-    user13 = (df.iat[12, 3])
-    user14 = (df.iat[13, 3])
-    user15 = (df.iat[14, 3])
-    user16 = (df.iat[15, 3])
-    user17 = (df.iat[16, 3])
+    # #df = pd.read_excel("C:/QLAGA0.913/user.xlsx",
+    #                    sheet_name='Tabelle1', header=None)  # C:\Users\Frank\Desktop\Programmierung\Aktuelle Projekte\St0706\Streamlit #C:/Users/0z/Desktop/Programmierung/Aktuelle Projekte/St0706/Streamlit/user.xlsx
+    # user1 = (df.iat[0, 3])
+    # user2 = (df.iat[1, 3])
+    # user3 = (df.iat[2, 3])
+    # user4 = (df.iat[3, 3])
+    # user5 = (df.iat[4, 3])
+    # user6 = (df.iat[5, 3])
+    # user7 = (df.iat[6, 3])
+    # user8 = (df.iat[7, 3])
+    # user9 = (df.iat[8, 3])
+    # user10 = (df.iat[9, 3])
+    # user11 = (df.iat[10, 3])
+    # user12 = (df.iat[11, 3])
+    # user13 = (df.iat[12, 3])
+    # user14 = (df.iat[13, 3])
+    # user15 = (df.iat[14, 3])
+    # user16 = (df.iat[15, 3])
+    # user17 = (df.iat[16, 3])
 
-    user1_name= (df.iat[0,0])
-    user2_name= (df.iat[1,0])
-    user3_name= (df.iat[2,0])
-    user4_name= (df.iat[3,0])
-    user5_name= (df.iat[4,0])
-    user6_name= (df.iat[5,0])
-    user7_name= (df.iat[6,0])
-    user8_name= (df.iat[7,0])
-    user9_name= (df.iat[8,0])
-    user10_name= (df.iat[9,0])
-    user11_name= (df.iat[10,0])
-    user12_name= (df.iat[11,0])
-    user13_name= (df.iat[12,0])
-    user14_name= (df.iat[13,0])
-    user15_name= (df.iat[14,0])
-    user16_name= (df.iat[15,0])
-    user17_name= (df.iat[16,0])
+    # user1_name= (df.iat[0,0])
+    # user2_name= (df.iat[1,0])
+    # user3_name= (df.iat[2,0])
+    # user4_name= (df.iat[3,0])
+    # user5_name= (df.iat[4,0])
+    # user6_name= (df.iat[5,0])
+    # user7_name= (df.iat[6,0])
+    # user8_name= (df.iat[7,0])
+    # user9_name= (df.iat[8,0])
+    # user10_name= (df.iat[9,0])
+    # user11_name= (df.iat[10,0])
+    # user12_name= (df.iat[11,0])
+    # user13_name= (df.iat[12,0])
+    # user14_name= (df.iat[13,0])
+    # user15_name= (df.iat[14,0])
+    # user16_name= (df.iat[15,0])
+    # user17_name= (df.iat[16,0])
 
-    # my_bar = st.progress(0)
-    # for percent_complete in range(10):
-    #     time.sleep(0.1)
-    #     my_bar.progress(percent_complete + 1)
-    option = st.selectbox('Bearbeiter:',
-                          (user1, user2, user3, user4, user5, user6, user7, user8, user9, user10, user11, user12, user13, user14, user15, user16, user17))
-    if option == user1:
-        bearbeiter = user1_name
-        telefonnummer = df.iat[0, 2]
-        email = df.iat[0, 1]
-    elif option == user2:
-        bearbeiter = user2_name
-        telefonnummer = telefonnummer = df.iat[1, 2]
-        email = email = df.iat[1, 1]
-    elif option == user3:
-        bearbeiter = user3_name
-        telefonnummer = telefonnummer = df.iat[2, 2]
-        email = email = df.iat[2, 1]
-    elif option == user4:
-        bearbeiter = user4_name
-        telefonnummer = telefonnummer = df.iat[3, 2]
-        email = email = df.iat[3, 1]
-    elif option == user5:
-        bearbeiter = user5_name
-        telefonnummer = telefonnummer = df.iat[4, 2]
-        email = email = df.iat[4, 1]
-    elif option == user6:
-        bearbeiter = user6_name
-        telefonnummer = telefonnummer = df.iat[5, 2]
-        email = email = df.iat[5, 1]
-    elif option == user7:
-        bearbeiter = user7_name
-        telefonnummer = telefonnummer = df.iat[6, 2]
-        email = email = df.iat[6, 1]
-    elif option == user8:
-        bearbeiter = user8_name
-        telefonnummer = telefonnummer = df.iat[7, 2]
-        email = email = df.iat[7, 1]
-    elif option == user9:
-        bearbeiter = user9_name
-        telefonnummer = telefonnummer = df.iat[8, 2]
-        email = email = df.iat[8, 1]
-    elif option == user10:
-        bearbeiter = user10_name
-        telefonnummer = telefonnummer = df.iat[9, 2]
-        email = email = df.iat[9, 1]
-    elif option == user11:
-        bearbeiter = user11_name
-        telefonnummer = telefonnummer = df.iat[10, 2]
-        email = email = df.iat[10, 1]
-    elif option == user12:
-        bearbeiter = user12_name
-        telefonnummer = telefonnummer = df.iat[11, 2]
-        email = email = df.iat[11, 1]
-    elif option == user13:
-        bearbeiter = user13_name
-        telefonnummer = telefonnummer = df.iat[12, 2]
-        email = email = df.iat[12, 1]
-    elif option == user14:
-        bearbeiter = user14_name
-        telefonnummer = telefonnummer = df.iat[13, 2]
-        email = email = df.iat[13, 1]
-    elif option == user15:
-        bearbeiter = user15_name
-        telefonnummer = telefonnummer = df.iat[14, 2]
-        email = email = df.iat[14, 1]
-    elif option == user16:
-        bearbeiter = user16_name
-        telefonnummer = telefonnummer = df.iat[15, 2]
-        email = email = df.iat[15, 1]
-    elif option == user17:
-        bearbeiter = user17_name
-        telefonnummer = telefonnummer = df.iat[16, 2]
-        email = email = df.iat[16, 1]
+    # # my_bar = st.progress(0)
+    # # for percent_complete in range(10):
+    # #     time.sleep(0.1)
+    # #     my_bar.progress(percent_complete + 1)
+    # option = st.selectbox('Bearbeiter:',
+    #                       (user1, user2, user3, user4, user5, user6, user7, user8, user9, user10, user11, user12, user13, user14, user15, user16, user17))
+    # if option == user1:
+    #     bearbeiter = user1_name
+    #     telefonnummer = df.iat[0, 2]
+    #     email = df.iat[0, 1]
+    # elif option == user2:
+    #     bearbeiter = user2_name
+    #     telefonnummer = telefonnummer = df.iat[1, 2]
+    #     email = email = df.iat[1, 1]
+    # elif option == user3:
+    #     bearbeiter = user3_name
+    #     telefonnummer = telefonnummer = df.iat[2, 2]
+    #     email = email = df.iat[2, 1]
+    # elif option == user4:
+    #     bearbeiter = user4_name
+    #     telefonnummer = telefonnummer = df.iat[3, 2]
+    #     email = email = df.iat[3, 1]
+    # elif option == user5:
+    #     bearbeiter = user5_name
+    #     telefonnummer = telefonnummer = df.iat[4, 2]
+    #     email = email = df.iat[4, 1]
+    # elif option == user6:
+    #     bearbeiter = user6_name
+    #     telefonnummer = telefonnummer = df.iat[5, 2]
+    #     email = email = df.iat[5, 1]
+    # elif option == user7:
+    #     bearbeiter = user7_name
+    #     telefonnummer = telefonnummer = df.iat[6, 2]
+    #     email = email = df.iat[6, 1]
+    # elif option == user8:
+    #     bearbeiter = user8_name
+    #     telefonnummer = telefonnummer = df.iat[7, 2]
+    #     email = email = df.iat[7, 1]
+    # elif option == user9:
+    #     bearbeiter = user9_name
+    #     telefonnummer = telefonnummer = df.iat[8, 2]
+    #     email = email = df.iat[8, 1]
+    # elif option == user10:
+    #     bearbeiter = user10_name
+    #     telefonnummer = telefonnummer = df.iat[9, 2]
+    #     email = email = df.iat[9, 1]
+    # elif option == user11:
+    #     bearbeiter = user11_name
+    #     telefonnummer = telefonnummer = df.iat[10, 2]
+    #     email = email = df.iat[10, 1]
+    # elif option == user12:
+    #     bearbeiter = user12_name
+    #     telefonnummer = telefonnummer = df.iat[11, 2]
+    #     email = email = df.iat[11, 1]
+    # elif option == user13:
+    #     bearbeiter = user13_name
+    #     telefonnummer = telefonnummer = df.iat[12, 2]
+    #     email = email = df.iat[12, 1]
+    # elif option == user14:
+    #     bearbeiter = user14_name
+    #     telefonnummer = telefonnummer = df.iat[13, 2]
+    #     email = email = df.iat[13, 1]
+    # elif option == user15:
+    #     bearbeiter = user15_name
+    #     telefonnummer = telefonnummer = df.iat[14, 2]
+    #     email = email = df.iat[14, 1]
+    # elif option == user16:
+    #     bearbeiter = user16_name
+    #     telefonnummer = telefonnummer = df.iat[15, 2]
+    #     email = email = df.iat[15, 1]
+    # elif option == user17:
+    #     bearbeiter = user17_name
+    #     telefonnummer = telefonnummer = df.iat[16, 2]
+    #     email = email = df.iat[16, 1]
     # elif option == user2:
     #     bearbeiter = user2
     #     telefonnummer = telefonnummer = df.iat[1, 2]
@@ -4575,9 +4575,9 @@ if active_tab == "LAGA Bauschutt":
                 WorkSheet['C55'] = zeitraumpruefung
                 WorkSheet['C56'] = aktuellesDatum
                 WorkSheet['E47'] = bem
-                WorkSheet['C57'] = bearbeiter
-                WorkSheet['G55'] = telefonnummer
-                WorkSheet['G57'] = email
+                #WorkSheet['C57'] = bearbeiter
+                #WorkSheet['G55'] = telefonnummer
+                #WorkSheet['G57'] = email
                 WorkSheet['C4'] = Vorhabenbezeichnung
                 WorkSheet['C5'] = Projektnummer
                 if udB_as_el == ' [u.d.B.]':
@@ -4724,9 +4724,9 @@ if active_tab == "LAGA Bauschutt":
                 WorkSheet['C51'] = zeitraumpruefung
                 WorkSheet['C52'] = aktuellesDatum
                 WorkSheet['E43'] = bem
-                WorkSheet['C53'] = bearbeiter
-                WorkSheet['G51'] = telefonnummer
-                WorkSheet['G52'] = email
+                #WorkSheet['C53'] = bearbeiter
+                #WorkSheet['G51'] = telefonnummer
+                #WorkSheet['G52'] = email
                 WorkSheet['C4'] = Vorhabenbezeichnung
                 WorkSheet['C5'] = Projektnummer
                 if udB_as_el == ' [u.d.B.]':
